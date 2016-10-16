@@ -72,7 +72,7 @@ Looking at tweets in quotes (Donald Trump's way of retweeting): ![tweets in quot
 
 Looking at tweets with links:
 <figure>
-  <img style="float: right;" src=src="https://github.com/AnnaVM/Twitter_API/blob/master/images/hasLinks.png"
+  <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/hasLinks.png"
    alt="tweets with links"
     width="304" height="228">
   <figcaption>Fig1. - Bar graph of tweets from Android vs iPhone - looking at links.</figcaption>
