@@ -70,6 +70,8 @@ A Jupyter Notebook `Trump_or_staff` explores the differences between features of
 
 Looking at tweets in quotes (Donald Trump's way of retweeting): ![tweets in quotes](https://github.com/AnnaVM/Twitter_API/blob/master/images/isQuote.png "Bar graph of tweets from Android vs iPhone - quotes")
 
-Looking at tweets with links: ![tweets with links](https://github.com/AnnaVM/Twitter_API/blob/master/images/hasLinks.png "Bar graph of tweets from Android vs iPhone - links")
+Looking at tweets with links: ![tweets with links]
+<img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/hasLinks.png">
+( "Bar graph of tweets from Android vs iPhone - links")
 
 Looking at time of day when tweets are published with an iPhone vs on Android plateform: ![hours of tweets](https://github.com/AnnaVM/Twitter_API/blob/master/images/hour_graph.png "Gaph of when tweets from Android vs iPhone are published")
