@@ -68,15 +68,31 @@ categories_wanted = ['id', 'created_at', 'retweeted','source','text',\
 
 A Jupyter Notebook `Trump_or_staff` explores the differences between features of tweets written on Android vs iPhone, as this seems to be a difference between tweets written directly by Donald Trump, vs those written by his staff. The time and day of the week show different patterns, as do the use of links/hashtags or the use of quotation marks.
 
-Looking at tweets in quotes (Donald Trump's way of retweeting): ![tweets in quotes](https://github.com/AnnaVM/Twitter_API/blob/master/images/isQuote.png "Bar graph of tweets from Android vs iPhone - quotes")
+Looking at tweets in quotes (Donald Trump's way of retweeting):
+
+<figure>
+  <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/isQuote.png"
+   alt="tweets in quotes"
+    width="456">
+  <figcaption>Fig1. - Bar graph of tweets from Android vs iPhone - looking at tweets in quotes.</figcaption>
+</figure>
+
+![]( "Bar graph of tweets from Android vs iPhone - quotes")
 
 Looking at tweets with links:
 <figure>
   <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/hasLinks.png"
    alt="tweets with links"
-    width="304" height="228">
-  <figcaption>Fig1. - Bar graph of tweets from Android vs iPhone - looking at links.</figcaption>
+    width="456">
+  <figcaption>Fig2. - Bar graph of tweets from Android vs iPhone - looking at presence/absence of links in the tweets.</figcaption>
 </figure>
 
 
-Looking at time of day when tweets are published with an iPhone vs on Android plateform: ![hours of tweets](https://github.com/AnnaVM/Twitter_API/blob/master/images/hour_graph.png "Gaph of when tweets from Android vs iPhone are published")
+Looking at time of day when tweets are published with an iPhone vs on Android plateform:
+
+<figure>
+  <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/hour_graph.png"
+   alt="hours of tweets"
+    width="456">
+  <figcaption>Fig3. - Graph of when tweets from Android vs iPhone are published</figcaption>
+</figure>
