@@ -1,8 +1,8 @@
 # Twitter_API
 
-The original idea behind this project has its origin in a PyLadies of San Francisco workshop (13 October 2016) led by Georgiana Ogrean.
+The original idea behind this project has its origin in a PyLadies of San Francisco workshop (13 October 2016) led by Georgiana Ogrean as well as from the analysis of tweets performed by David Robinson (http://varianceexplained.org/r/trump-tweets/)
 
-## Twitter API
+## Using the Twitter API
 
 The Twitter API has a python wrapper thanks to the package Tweepy (http://docs.tweepy.org/en/v3.5.0/).
 
@@ -63,3 +63,13 @@ This .csv file can be read into a `Pandas DataFrame` or `DictReader`.
 categories_wanted = ['id', 'created_at', 'retweeted','source','text',\
                           'lang','favorite_count', 'retweet_count']
 ```
+
+## Exploration of the data and feature engineering
+
+A Jupyter Notebook `Trump_or_staff` explores the differences between features of tweets written on Android vs iPhone, as this seems to be a difference between tweets written directly by Donald Trump, vs those written by his staff. The time and day of the week show different patterns, as do the use of links/hashtags or the use of quotation marks.
+
+Looking at tweets in quotes (Donald Trump's way of retweeting): ![tweets in quotes](https://github.com/AnnaVM/Twitter_API/blob/master/images/isQuote.png "Bar graph of tweets from Android vs iPhone - quotes")
+
+Looking at tweets with links: ![tweets with links](https://github.com/AnnaVM/Twitter_API/blob/master/images/hasLinks.png "Bar graph of tweets from Android vs iPhone - links")
+
+Looking at time of day when tweets are published with an iPhone vs on Android plateform: ![hours of tweets](https://github.com/AnnaVM/Twitter_API/blob/master/images/hour_graph.png "Gaph of when tweets from Android vs iPhone are published")
