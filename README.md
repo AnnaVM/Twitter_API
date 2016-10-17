@@ -76,8 +76,6 @@ A Jupyter Notebook `Trump_or_staff` explores the differences between features of
   <figcaption>Fig1. - Bar graph of tweets from Android vs iPhone - looking at tweets in quotes.</figcaption>
 </figure>
 
-![]( "Bar graph of tweets from Android vs iPhone - quotes")
-
 - Looking at tweets with links (more of a staff behavior):
 <figure>
   <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/hasLinks.png"
@@ -97,4 +95,7 @@ A Jupyter Notebook `Trump_or_staff` explores the differences between features of
 
 ## Richness of vocabulary
 
-Part of Speech tag (`nltk` package) as well as Stanford (Nom)
+The aim of this section is to explore the diversity of the vocabulary used in tweets that are identified as coming from Donald Trump rather than his staff and that are not simply retweets (tweet in quotes in this particular data). The tweets will therefore be tokenized, the tokens will be tagged as well as processed (lemmatized or stemmed, with stopwords and very short words also removed).
+
+#### Tags:
+A very slow, but information rich, step implemented here is tagging tokens with i) standard part of speech tags (standard `nltk` package -- we can focus on adjectives vs verbs for instance) as well as with ii) 3 classes for named entity recognizers ie. person, organization, location (`StanfordNERTagger` - http://nlp.stanford.edu/software/CRF-NER.shtml).
