@@ -68,8 +68,7 @@ categories_wanted = ['id', 'created_at', 'retweeted','source','text',\
 
 A Jupyter Notebook `Trump_or_staff` explores the differences between features of tweets written on Android vs iPhone, as this seems to be a difference between tweets written directly by Donald Trump, vs those written by his staff. The time and day of the week show different patterns, as do the use of links/hashtags or the use of quotation marks.
 
-Looking at tweets in quotes (Donald Trump's way of retweeting):
-
+-Looking at tweets in quotes (Donald Trump's way of retweeting):
 <figure>
   <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/isQuote.png"
    alt="tweets in quotes"
@@ -79,7 +78,7 @@ Looking at tweets in quotes (Donald Trump's way of retweeting):
 
 ![]( "Bar graph of tweets from Android vs iPhone - quotes")
 
-Looking at tweets with links:
+- Looking at tweets with links (more of a staff behavior):
 <figure>
   <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/hasLinks.png"
    alt="tweets with links"
@@ -88,11 +87,14 @@ Looking at tweets with links:
 </figure>
 
 
-Looking at time of day when tweets are published with an iPhone vs on Android plateform:
-
+- Looking at time of day when tweets are published with an iPhone vs on Android plateform:
 <figure>
   <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/hour_graph.png"
    alt="hours of tweets"
     width="456">
   <figcaption>Fig3. - Graph of when tweets from Android vs iPhone are published</figcaption>
 </figure>
+
+## Richness of vocabulary
+
+Part of Speech tag (`nltk` package) as well as Stanford (Nom)
