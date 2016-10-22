@@ -123,12 +123,20 @@ The POS tags allow us to selectively look at adjectives, adverbs and verbs.
 <figure>
   <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/adj_count.png"
    alt="most frequent adjectives"
-    width="300">
+    width="250">
     <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/adv_count.png"
      alt="most frequent adverbs"
-      width="300">
+      width="250">
     <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/verb_count.png"
        alt="most frequent verbs"
-        width="300">
+        width="250">
   <figcaption>Fig5. - Bar charts to show the count of the most frequent adjectives, adverbs and verbs.</figcaption>
+</figure>
+
+Using `Textblob` the subjectivity and the positive/negative content know as polarity of tweets were investigated. A specific sub-category of the vocabulary, adjectives, were then analyzed. The results are summarized in the following graph to acocunt for frequency of usage as well as for sentiment charge.  
+<figure>
+  <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/sentiment_analysis.png"
+   alt="Twitter wordcloud"
+    width="456">
+  <figcaption>Fig4. - Sentiment analysis of Donald Trump's adjective use. Size of the word reflects its usage, x position its polarity (-1 is negative, 1 positive sentiments) and y position its subjectivity (0 for objective and 1 for subjective).</figcaption>
 </figure>
