@@ -1,6 +1,16 @@
 # Twitter_API
 
-The original idea behind this project has its origin in a PyLadies of San Francisco workshop (13 October 2016) led by Georgiana Ogrean as well as from the analysis of tweets performed by David Robinson (http://varianceexplained.org/r/trump-tweets/)
+The original idea behind this project has its roots in a PyLadies of San Francisco workshop (13 October 2016) led by Georgiana Ogrean as well as from the R-based analysis of tweets performed by David Robinson (http://varianceexplained.org/r/trump-tweets/)
+
+General Goal: A NLP project, using Twitter's API (and Tweepy), that allows for data exploration as well as a study of the richness of the Twitter vocabulary for a given user (here, recent events dictate that person to be Donald Trump). A sentiment analysis (polarity and subjectivity thanks to Text Blob) is also carried out for the tweets in general as well as for adjectives in particular (tagging words with nltk POS and Stanford's NER).
+
+- Preview of the wordcloud based on the Donald Trump's tweets:
+<figure>
+  <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/twitter_wordcloud.png"
+   alt="wordcloud for Twitter account"
+    width="456">
+  <figcaption>Fig0. - Wordcloud in the shape of the Twitter bird, based on tweets from realDonaldTrump's account, posted from Android and not in quotation.</figcaption>
+</figure>
 
 ## Using the Twitter API
 
@@ -95,7 +105,30 @@ A Jupyter Notebook `Trump_or_staff` explores the differences between features of
 
 ## Richness of vocabulary
 
-The aim of this section is to explore the diversity of the vocabulary used in tweets that are identified as coming from Donald Trump rather than his staff and that are not simply retweets (tweet in quotes in this particular data). The tweets will therefore be tokenized, the tokens will be tagged as well as processed (lemmatized or stemmed, with stopwords and very short words also removed).
+The aim of this section is to explore the diversity of the vocabulary used in tweets that are identified as coming from Donald Trump rather than his staff and that are not simply retweets (tweet in quotes in this particular data). The tweets will therefore be tokenized, the tokens will be tagged as well as processed (lemmatized or stemmed, with stopwords and very short words also removed). The Jupyter Notebook `Trump_vocabulary` allows you to follow along.
+
+<figure>
+  <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/twitter_wordcloud.png"
+   alt="Twitter wordcloud"
+    width="456">
+  <figcaption>Fig4. - Wordcloud of Donald Trump's vocabulary.</figcaption>
+</figure>
 
 #### Tags:
 A very slow, but information rich, step implemented here is tagging tokens with i) standard part of speech tags (standard `nltk` package -- we can focus on adjectives vs verbs for instance) as well as with ii) 3 classes for named entity recognizers ie. person, organization, location (`StanfordNERTagger` - http://nlp.stanford.edu/software/CRF-NER.shtml).
+
+#### Explore adjective, adverbs and verb tags:
+
+The POS tags allow us to selectively look at adjectives, adverbs and verbs.
+<figure>
+  <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/adj_count.png"
+   alt="most frequent adjectives"
+    width="300">
+    <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/adv_count.png"
+     alt="most frequent adverbs"
+      width="300">
+    <img style="float: right;" src="https://github.com/AnnaVM/Twitter_API/blob/master/images/verb_count.png"
+       alt="most frequent verbs"
+        width="300">
+  <figcaption>Fig5. - Bar charts to show the count of the most frequent adjectives, adverbs and verbs.</figcaption>
+</figure>
